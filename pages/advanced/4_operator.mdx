@@ -1,0 +1,190 @@
+# Operator
+
+## Tipe data pada Python
+|Tipe data   | Contoh      |
+|----------- | ----------- |
+|Integer | 1, 2, 3 |
+|Float | 1.2, 4.5 |
+|String   | buku, rumah|
+|Boolean | True or False |
+
+
+Operator adalah simbol khusus yang berfungsi melakukan operasi pada variable dan 'value'.
+
+  ``` python filename="Output"
+    print(5 + 6)   # 11
+  ```
+
+    ``` python filename="Output"
+    a = 5 - 5
+  ```
+
+## Tipe-tipe operator pada Python
+    1. operator aritmatika
+    2. operator sama dengan
+    3. operator perbandingan
+    4. operator logika
+    5. operator bitwise
+
+### Operator aritmatika
+Operator aritmatika digunakan untuk melkaukan operasi matematika seperti penjumlahan, pengurangan, perkalian, dan sbb.
+
+| Operator | Operasi     | Contoh      |
+| -------- | ----------- | ----------- |
+|   +    | Penjumlahan | 5 + 2 = 7 |
+|   -   | Pengurangan | 5 - 2 = 3 |
+|   *   | Perkalian   | 5 * 2 = 10|
+|   /   | Pembagian | 10 / 2 = 5 |
+|   %   | Modulo | 5 % 2 = 1 |
+|   **    | Perpangkatan | 5 ** 2 = 25 |
+
+    ``` python filename="Python showLineNumbers copy"
+    a = 7
+    b = 2
+
+    # Penjumlahan
+    print ('Penjumlahan: ', a + b)  
+
+    # Pengurangan
+    print ('Pengurangan: ', a - b)   
+
+    # Perkalian
+    print ('MultiPerkalianplication: ', a * b)  
+
+    # Pembagian
+    print ('Pembagian: ', a / b) 
+
+    # modulo
+    print ('Modulo: ', a % b)  
+
+    # Perpangkatan
+    print ('Perpangkatan: ', a ** b)  
+    ```
+
+    ``` python filename="Output"
+    Penjumlahan: 9
+    Pengurangan: 5
+    Perkalian: 14
+    Pembagian: 3.5
+    Modulo: 1
+    Perpangkatan: 49
+    ```
+
+### Operator sama dengan
+Operator sama dengan digunakan untuk memberikan nilai pada suatu variabel
+Contoh :
+
+    ``` python filename="Output"
+    # assign 5 to x 
+    x = 5
+  ```
+
+  disini, '=' digunakan untuk memberikan nilai 5 pada variabel x
+
+  Here's a list of different assignment operators available in Python.
+
+  ini adalah daftar operator sama dengan yang tersedia pada python
+
+| Operator | Nama     | Contoh      |
+| -------- | ----------- | ----------- |
+|   = | Operator sama dengan | a = 7 |
+|   +=    | Addition Assignment | a += 1 |
+|   -=    | Subtraction Assignment   | a -= 3|
+
+contoh operator sama dengan
+
+    ``` python filename="Python showLineNumbers copy"
+      # assign 10 to a
+      a = 10
+
+      # assign 5 to b
+      b = 5 
+
+      # assign the sum of a and b to a
+      a += b      # a = a + b
+
+      print(a)
+
+      # Output: 15
+    ```
+
+    disini kita menggunakan operator '+=' untuk memberikan nilai penjumlahan a dan b ke a
+
+### Operator Perbandingan
+Operator Perbandungan membandingkan dua nilai/variabel dan mengembalikan hasil bertipe boolean: True atau False,
+Sebagai contoh :
+
+| Operator | Arti     | Contoh      |
+| -------- | ----------- | ----------- |
+|   ==    | Sebanding dengan | 3 == 5 akan mengembalikan False |
+|   !=    | tidak sebanding dengan | 3 != 5 akan mengembalikan True |
+|   >   | Lebih besar dari   | 3 > 5 akan mengembalikan False|
+|   <   | Lebih Kecil Dari | 3 < 5 akan mengembalikan True |
+|   >=    | Lebih Besar atau sama dengan | 3 >= 5 akan mengembalikan False |
+|   <=    | Lebih kecil atau sama dengan | 3 <= 5 akan mengembalikan False |
+
+    ``` python filename="Python showLineNumbers copy"
+    a = 5
+
+    b = 2
+
+    # equal to operator
+    print('a == b =', a == b)
+
+    # not equal to operator
+    print('a != b =', a != b)
+
+    # greater than operator
+    print('a > b =', a > b)
+
+    # less than operator
+    print('a < b =', a < b)
+
+    # greater than or equal to operator
+    print('a >= b =', a >= b)
+
+    # less than or equal to operator
+    print('a <= b =', a <= b)
+    ```
+
+    ``` python filename="Output"
+    a == b = False
+    a != b = True
+    a > b = True
+    a < b = False
+    a >= b = True
+    a <= b = False
+  ```
+
+### Operator Logika
+Operator logika digunakan untuk mengecek apakah pernyataan yang diberikan benar atau salah. mereka digunakan dalam pengambilan keputusan.
+sebagai contoh :
+
+  ``` python filename="Output"
+    a = 5
+    b = 6
+
+    print((a > 2) and (b >= 6))    # True
+  ```
+
+  Disini, 'and' adalah logika operator AND. karena pernyataan keduanya adalah benar, maka hasil berupa ==True==.
+
+| Operator | Contoh     | Pengertian      |
+| -------- | ----------- | ----------- |
+|   and    | a and b | **Logika AND**: True jika kedua pernyataan True |
+|   or   | a or b | **Logical OR**: True Jika setidaknya satu dari kedua pernyataan benar|
+|   not    | not a     | **Logical NOT**: True Jika pernyataan False begitun juga sebaliknya|
+
+Contoh :
+
+    ``` python filename="Python showLineNumbers copy"
+      # logical AND
+      print(True and True)     # True
+      print(True and False)    # False
+
+      # logical OR
+      print(True or False)     # True
+
+      # logical NOT
+      print(not True)          # False
+    ```
