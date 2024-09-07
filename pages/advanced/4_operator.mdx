@@ -153,3 +153,36 @@ Sebagai contoh :
     a >= b = True
     a <= b = False
   ```
+
+  ### Operator Logika
+Operator logika digunakan untuk mengecek apakah pernyataan yang diberikan benar atau salah. mereka digunakan dalam pengambilan keputusan.
+sebagai contoh :
+
+  ``` python filename="Output"
+    a = 5
+    b = 6
+
+    print((a > 2) and (b >= 6))    # True
+  ```
+
+  Disini, 'and' adalah logika operator AND. karena pernyataan keduanya adalah benar, maka hasil berupa ==True==.
+
+| Operator | Contoh     | Pengertian      |
+| -------- | ----------- | ----------- |
+|   and    | a and b | **Logika AND**: True jika kedua pernyataan True |
+|   or   | a or b | **Logical OR**: True Jika setidaknya satu dari kedua pernyataan benar|
+|   not    | not a     | **Logical NOT**: True Jika pernyataan False begitun juga sebaliknya|
+
+Contoh :
+
+    ``` python filename="Python showLineNumbers copy"
+      # logical AND
+      print(True and True)     # True
+      print(True and False)    # False
+
+      # logical OR
+      print(True or False)     # True
+
+      # logical NOT
+      print(not True)          # False
+    ```
