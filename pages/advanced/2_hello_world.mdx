@@ -1,0 +1,96 @@
+# Hello world
+
+## program pertamamu
+
+ketik kode seperti dibawah:
+  ```python filename="hello_world.py" {1-2} showLineNumbers copy
+  print("Hello, World!")
+  ```
+
+kemudian jalankan kode tersebut
+Output:
+
+  ``` python filename="Output"
+    Hello, World!
+  ```
+
+### jadi bagaimana kode ini bekerja?
+
+![hello world](components/images/zzz1.png)
+
+- pada python semua yang ada di dalam kurung print akan ditampilkan
+- untuk melakukan print teks diperlukan tanda petik ("")
+
+  ```python filename="hello_world.py"  showLineNumbers copy
+  print('Hello World!')
+  ```
+
+  sama dengan
+
+    ```python filename="hello_world.py"  showLineNumbers copy
+  print("Hello World!")
+  ```
+
+## Komentar
+komentar adalah barisan yang tidak dibaca oleh komputer yang biasanya digunakan sebagai petunjuk untuk programmer
+agar kode lebih mudah dipahami
+Komentar dalam Python dimulai dengan #.
+
+#### Contoh:
+  ```python filename="hello_world.py" showLineNumbers copy
+  # print a number
+    print(25)
+  ```
+
+### Single-line Comment
+  ```python filename="hello_world.py" showLineNumbers copy
+        # declare a variable
+        name = "John"
+
+        # print name
+        print(name)    # John
+  ```
+
+### Multiline Comments
+  ```python filename="hello_world.py" {1-3} showLineNumbers copy
+    # This is an example of a multiline comment
+    # created using multiple single-line commenced
+    # The code prints the text Hello World
+    print("Hello, World!")
+  ```
+
+  atau
+
+    ```python filename="hello_world.py" {1-2} showLineNumbers copy
+    '''This is an example 
+    of multiline comment'''
+    print("Hello, World!")
+  ```
+
+### Melakukan Debug dengan menggunakan komentar
+  ```python filename="hello_world.py"  showLineNumbers copy
+    number1 = 10
+    number2 = 15
+
+    sum = number1 + number2
+
+    print("The sum is:", sum)
+    print("The product is:", product)
+  ```
+
+  kode diatas akan mengalami error dikarenakan variabel product belum dilakukan inisialisasi
+
+    ```python filename="hello_world.py"  showLineNumbers copy
+    number1 = 10
+    number2 = 15
+
+    sum = number1 + number2
+
+    print("The sum is:", sum)
+    #print("The product is:", product)
+  ```
+
+  Output :
+``` python filename="Output"
+    The sum is 25
+  ```

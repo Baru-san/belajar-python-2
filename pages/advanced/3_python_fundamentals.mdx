@@ -1,0 +1,155 @@
+# Python fundamental
+
+## Python Variables
+In programming, a variable is a container (storage area) to hold data. For example,
+dalam programming, variabel adalah suatu wadah untuk menyimpan data,
+Contoh:
+
+  ```python filename="hello_world.py" showLineNumbers copy
+  number = 10
+  ```
+
+disini, 'number' adalah variabel yang bernilai 10
+
+### memberikan nilai ke variabel
+seperti kode diatas kita bisa menggunakan operator '=' untuk memberikan nilai
+
+  ```python filename="hello_world.py" showLineNumbers copy
+# assign value to site_name variable
+site_name = 'programiz.pro'
+
+print(site_name)
+
+# Output: programiz.pro
+  ```
+
+### mengubah nilai dari suatu variabel
+
+  ```python filename="hello_world.py" showLineNumbers copy
+    site_name = 'programiz.pro'
+    print(site_name)
+
+    # assigning a new value to site_name
+    site_name = 'apple.com'
+
+    print(site_name)
+  ```
+
+Output:
+  ``` python filename="Output"
+programiz.pro
+apple.com
+  ```
+
+#### memberikan nilai ke beberapa variabel sekaligus
+  ```python filename="hello_world.py" showLineNumbers copy
+a, b, c = 5, 3.2, 'Hello'
+
+print (a)  # prints 5
+print (b)  # prints 3.2
+print (c)  # prints Hello 
+  ```
+
+## Python type conversion
+
+  ```python filename="python_conversion.py" showLineNumbers copy
+integer_number = 123
+float_number = 1.23
+
+new_number = integer_number + float_number
+
+# display new value and resulting data type
+print("Value:",new_number)
+print("Data Type:",type(new_number))
+  ```
+
+Output :
+  ``` python filename="Output"
+Value: 124.23
+Data Type: <class 'float'>
+  ```
+
+sekarang coba kode berikut:
+  ```python filename="hello_world.py" showLineNumbers copy
+num_string = '12'
+num_integer = 23
+
+num_sum = num_integer + num_string
+
+print("Sum:",num_sum)
+print("Data type of num_sum:",type(num_sum))
+  ```
+
+
+
+  ```python filename="hello_world.py" showLineNumbers copy
+num_string = '12'
+num_integer = 23
+
+print("Data type of num_string before Type Casting:",type(num_string))
+
+# explicit type conversion
+num_string = int(num_string)
+
+print("Data type of num_string after Type Casting:",type(num_string))
+
+num_sum = num_integer + num_string
+
+print("Sum:",num_sum)
+print("Data type of num_sum:",type(num_sum))
+  ```
+
+Output :
+  ``` python filename="Output"
+Data type of num_string before Type Casting: <class 'str'>
+Data type of num_string after Type Casting: <class 'int'>
+Sum: 35
+Data type of num_sum: <class 'int'>
+  ```
+
+## Python Input and Output
+### python output
+  ```python filename="hello_world.py" showLineNumbers copy
+print('Python is ' + 'awesome.')
+  ```
+
+Output :
+  ``` python filename="Output"
+Python is awesome.
+  ```
+disini, 
+- operator '+' menggabungkan dua string 'Python is ' dan 'awesome.'
+
+#### Python formatting
+  ```python filename="hello_world.py" showLineNumbers copy
+x = 5
+y = 10
+
+print('The value of x is {} and y is {}'.format(x,y))
+  ```
+
+### python input
+syntax input()
+  ``` python filename="Output"
+input(prompt)
+  ```
+
+  ```python filename="hello_world.py" showLineNumbers copy
+# using input() to take user input
+num = input('Enter a number: ')
+
+print('You Entered:', num)
+
+print('Data type of num:', type(num))
+  ```
+
+  Output :
+  ``` python filename="Output"
+Enter a number: 10
+You Entered: 10
+Data type of num: <class 'str'>
+  ```
+
+  ```python filename="hello_world.py" showLineNumbers copy
+num = int(input('Enter a number: '))
+  ```
